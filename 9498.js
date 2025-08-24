@@ -3,7 +3,6 @@ let input = fs.readFileSync('example.txt').toString().trim().split(' ')
 
 let a = Number(input[0]);
 
-console.log(a);
 if(a >= 90){
     console.log("A");
 }else if(a >= 80){
