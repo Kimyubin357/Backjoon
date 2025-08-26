@@ -1,18 +1,13 @@
 const fs = require('fs');
 let input = fs.readFileSync('example.txt').toString().trim().split(' ')
 
-let a = Number(input[0]);
+let n = Number(input[0])
 
-console.log(a);
-if(a >= 90){
-    console.log("A");
-}else if(a >= 80){
-    console.log("B"); 
-}else if(a >= 70){
-    console.log("C");
-}else if(a >= 60){
-    console.log("D");
-}else{
-    console.log("F");
+n /= 4
+let result = ""
+for(let i = 0; i < n; i++){
+    result += 'long '
 }
+result += 'int'
 
+console.log(result)
